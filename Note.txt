@@ -1,0 +1,34 @@
+php artisan make:controller <NameController>
+php artisan make:controller <NameController> --resource/ -r
+
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev
+
+* if error
+  - check folder layout
+  - uninstall node_modules
+
+php artisan make:model Post -m (-m for migration)
+
+* add in Providers/AppServiceProviders
+  use Illuminate\Support\Facades\Schema;
+  public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+
+  php artisan migrate
+
+  to enable database access from terminal
+    php artisan tinker
+
+php artisan route:list
+
+laravel collective for form
+
+php artisan ui:auth
+
+reflected storage/public to public
+  php artisan storage:link
